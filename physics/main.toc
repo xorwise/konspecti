@@ -1,1 +1,16 @@
 \babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Электростатика}{2}{}%
+\contentsline {paragraph}{Электрический заряд}{2}{}%
+\contentsline {paragraph}{Закон сохранения электрического заряда}{2}{}%
+\contentsline {paragraph}{Закон Кулона}{2}{}%
+\contentsline {paragraph}{Закон Кулона в векторной форме}{2}{}%
+\contentsline {paragraph}{Принцип суперпозиции}{2}{}%
+\contentsline {paragraph}{Напряженность электрического поля}{2}{}%
+\contentsline {paragraph}{Линии напряженности поля}{2}{}%
+\contentsline {paragraph}{Принцип суперпозиции для напряженности поля}{3}{}%
+\contentsline {paragraph}{Работа в электрическом поле}{3}{}%
+\contentsline {paragraph}{Потенциал}{3}{}%
+\contentsline {paragraph}{Принцип суперпозиции для потенциала}{3}{}%
+\contentsline {paragraph}{Работа сил при пермещение заряда q из точки 1 в точку 2}{3}{}%
+\contentsline {paragraph}{Еще одно определение потенциала}{3}{}%
+\contentsline {paragraph}{Электрическоп поле непрерывного распределения зарядов}{3}{}%
