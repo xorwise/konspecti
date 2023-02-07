@@ -1,0 +1,13 @@
+\babel@toc {russian}{}\relax 
+\contentsline {paragraph}{Определение}{2}{}%
+\contentsline {paragraph}{Примеры}{2}{}%
+\contentsline {paragraph}{Определение}{2}{}%
+\contentsline {paragraph}{Утверждение}{2}{}%
+\contentsline {paragraph}{Доказательство}{2}{}%
+\contentsline {paragraph}{Свойства неопределенных интегралов}{2}{}%
+\contentsline {paragraph}{Доказательства свойств}{2}{}%
+\contentsline {paragraph}{Таблица неопределенных интегралов}{3}{}%
+\contentsline {paragraph}{Теорема (Замена переменной)}{3}{}%
+\contentsline {paragraph}{Доказательство}{3}{}%
+\contentsline {paragraph}{Пример}{3}{}%
+\contentsline {paragraph}{Таблица внесения под знак интеграла}{4}{}%

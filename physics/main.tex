@@ -1,0 +1,33 @@
+\documentclass[a4paper]{article}
+\setlength\parindent{1.5em}
+
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[russian]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+  \def\svgwidth{\columnwidth}
+  \import{./figures/}{#1.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+\title{Физика}
+\author{Ситников Михаил}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\end{document}

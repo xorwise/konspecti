@@ -1,0 +1,137 @@
+\documentclass[a4paper]{article}
+\setlength\parindent{1.5em}
+
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[russian]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+  \def\svgwidth{\columnwidth}
+  \import{./figures/}{#1.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+\title{Математический анализ}
+\author{Ситников Михаил}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\chapter{Неопределенный интеграл}
+\paragraph{Определение}
+$f(x), F(x)$ -- определена на <a, b>; $F(x)$ -- дифференцируема на <a, b>; $F(x)$ -- называется первообразной функции $f(x)$, если $F^{'}(x) = f(x)$ 
+\paragraph{Примеры}
+\par $f(x) = \cos(x)$ 
+\par $ F_1(x) = \sin(x)$
+\par $F_2(x) = \sin(x) + 5$ 
+\paragraph{Определение}
+Неопределенный интеграл от f(x) называется семейством первообразных ${F(x) + C}$ \\ $\int f(x)dx$ 
+\paragraph{Утверждение}
+$\exists  f(x)$ имеет первообразную $F_1(x) и F_2(x) \implies F_1(x) - F_2(x) = C$
+\paragraph{Доказательство}
+$F_1(x)$ -- первообразная  $F_1^{'}=f(x)$ 
+\par $F_2(x)$ -- первообразная  $F_2^{'} = f(x)$ 
+\par $(F_1(x) - F_2(x))^{'}$ 
+\par $F_1^{'} - F_2^{'} = f(x) - f(x) = 0$ 
+\par ч. т. д.
+
+\paragraph{Свойства неопределенных интегралов}
+\begin{enumerate}
+  \item $(\int f(x)dx)^{'} = f(x)$ 
+  \item $\int f^{'}(x)dx = f(x) + C$ 
+  \item $\int Af(x)dx = A\int f(x)dx$ 
+    \\ $A in R$
+  \item  $\int(f(x) +- g(x))dx = \int f(x)dx +- \int g(x)dx$
+\end{enumerate}
+\paragraph{Доказательства свойств}
+\begin{enumerate}
+  \item $(\intf(x)dx)^{'}= (F(x)+C)^{'} = f(x) + C = f(x)$ 
+  \item $\int f^{'}(x)dx)^{'} = f^{'}(x)$ 
+    \\ $(f(x) + C)^{'} = f^{'}(x)$ 
+  \item $(\int Af(x)dx)^{'}) = Af(x)$ 
+    \\ $(A \intf(x)dx)' = A(\int f(x)dx)' = Af(x)$ 
+  \item $(\int(f(x) +- g(x))dx)' = f(x) +- g(x)$
+    \\ $(\int (fx)dx +- \int g(x)dx)' = (\int f(x)dx)' +- (\int g(x)dx)' = f(x) +- g(x)$
+\end{enumerate}
+\paragraph{Таблица неопределенных интегралов}
+\begin{enumerate}
+  \item $\int dx = x + C}$ 
+  \item $\int x^{n}dx = \frac{x^{n + 1}}{n + 1}, m \neq  -1$ 
+  \item $\int \frac{1}{x}dx = \ln|x| + C$
+  \item $\int \sin(x)dx = -\cos(x) + C$ 
+  \item $\int \cos(x)dx = \sin(x) + C$ 
+  \item $\int \frac{1}{\cos(x^2}dx = \tan(x) + C$
+  \item $\int \frac{1}{\sin(x)}dx = -\cotan(x) + C$ 
+  \item $\int e^{x}dx = e^{x} + C$ 
+  \item $\int a^{x}dx = \frac{a^{x}}{\ln(a)} + C$
+  \item $\int \frac{1}{\sqrt{1 - x^2}}dx =$
+    \begin{cases}
+     ${\arcsin(x) + C$ \\
+       $-\arcsin(x) + C$
+    \end{cases}
+ \item $\int \frac{1}{1 + x^2}dx =$
+   \begin{cases}
+      $arctg(x) + C$  
+      \\ $-arctg(x) + C$
+   \end{cases}
+      \item $\int \frac{1}{\sqrt{k^2 - x^2} }dx =$
+        \begin{cases}
+         $\arcsin(\frac{x}{k} + C$ \\
+         $- \arccos \frac{x}{k} + C$
+        \end{cases}
+ \item $\int \frac{1}{k^2 + x^2}dx =$
+    \begin{cases}
+      $\left \frac{1}{k} \right arctg(\frac{x}{k}) + C$ 
+      \\ $\left \frac{1}{k} \right arctg(\frac{x}{k}) + C$
+    \end{cases}
+
+\end{enumerate}
+
+\paragraph{Теорема (Замена переменной)}
+Пусть $f$ -- интегрируема
+\\ $\varphi(t)$ -- дифференцируема по t;  $F(x) $ -- первообразная для f(x)
+\\$\implies \int f(\varphi(t))\varphi'(t)dt = F(\varphi(t)) + C$ 
+\paragraph{Доказательство}
+$(\int f(\varphi(t))\varphi'(t)dt)' = f(\varphi(t))\varphi'(t)$ 
+\\ $(F(\VARPHI(t)) + C)' = F'(\varphi(t)) * \varphi(t) = f(\varphi(t)) * \varphi'(t)$
+\paragraph{Пример}
+\begin{enumerate}
+  \item 
+$\int \sin(2t+5)dt =$
+\begin{gathered}
+  $2t+5 = x$
+  \\
+  $t = \frac{x-5}{2}$
+  \\
+  $dt = \left( \frac{x-5}{2} \right) dx =\\= \frac{1}{2}dx = \int \sin(x) * \frac{1}{2}dx =\\= \frac{1}{2} \int \sin(x)dx =\\= \frac{1}{2}(-\cos(x)) + C = - \frac{1}{2}\cos(2t + 5) + C$
+\end{gathered}
+\item $\int \frac{x}{\sqrt{1 + x}}dx = [\sqrt{1 + x} = y; 1 + x = y^2; x = y^2 - 1; dx=(y^2-1)'dy=2ydy] = \int \frac{y^2 -1}{y}2ydy = 2\int(y^2 -1)dy = 2(\frac{y^3}{3} - y) + C = 2(\frac{\sqrt{(1+x)^3} }{3} - \sqrt{1+x}) + C$ 
+
+\end{enumerate}
+\paragraph{Таблица внесения под знак интеграла}
+\begin{enumerate}
+  \item $x^{n} \frac{1}{n+1}dx^{n + 1}, n \neq  -1$ 
+  \item $\frac{1}{x}dx = d\ln(x)$
+  \item $\sin(x)dx = -d\cos(x)$ 
+  \item $\cos(x)dx = d\sin(x)$ 
+  \item $e^{x}dx = de^{x}$ 
+  \item $a^{x}dx = \frac{1}{\ln(a)}da^{x}$ 
+\item $\frac{1}{\cos(x)^2}dx = dtg(x)$ 
+  \item $\frac{1}{\sin(x)^2}dx = -dctg(x)$ 
+  \item $dx = \frac{1}{a}*d(ax + b)$
+\end{enumerate}
+\end{document}
