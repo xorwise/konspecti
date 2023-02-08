@@ -10,4 +10,4 @@
 \contentsline {paragraph}{Теорема (Замена переменной)}{3}{}%
 \contentsline {paragraph}{Доказательство}{3}{}%
 \contentsline {paragraph}{Пример}{3}{}%
-\contentsline {paragraph}{Таблица внесения под знак интеграла}{4}{}%
+\contentsline {paragraph}{Таблица внесения под знак дифференциала}{4}{}%
